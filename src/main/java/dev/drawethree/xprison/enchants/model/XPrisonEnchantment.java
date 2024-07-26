@@ -25,9 +25,11 @@ public abstract class XPrisonEnchantment implements Refundable {
 	private String nameUncolor;
 	private String guiName;
 	private String base64;
+	private String tokenType;
 	private Material material;
 	private List<String> description;
 	private boolean enabled;
+	private boolean shopEnabled;
 	private int guiSlot;
 	private int maxLevel;
 	private long cost;
@@ -46,12 +48,14 @@ public abstract class XPrisonEnchantment implements Refundable {
 	}
 
 	private void reloadDefaultAttributes() {
+		this.tokenType = this.plugin.getEnchantsConfig().getYamlConfig().getString("enchants." + id + ".TokenType","token").toLowerCase();
 		this.rawName = this.plugin.getEnchantsConfig().getYamlConfig().getString("enchants." + id + ".RawName");
 		this.name = TextUtils.applyColor(this.plugin.getEnchantsConfig().getYamlConfig().getString("enchants." + id + ".Name"));
 		this.nameUncolor = this.name.replaceAll("§.", "");
 		this.guiName = TextUtils.applyColor(this.plugin.getEnchantsConfig().getYamlConfig().getString("enchants." + id + ".GuiName"));
 		this.material = CompMaterial.fromString(this.plugin.getEnchantsConfig().getYamlConfig().getString("enchants." + id + ".Material")).toMaterial();
 		this.description = TextUtils.applyColor(this.plugin.getEnchantsConfig().getYamlConfig().getStringList("enchants." + id + ".Description"));
+		this.shopEnabled = this.plugin.getEnchantsConfig().getYamlConfig().getBoolean("enchants." + id + ".shopEnabled",true);
 		this.enabled = this.plugin.getEnchantsConfig().getYamlConfig().getBoolean("enchants." + id + ".Enabled");
 		this.guiSlot = this.plugin.getEnchantsConfig().getYamlConfig().getInt("enchants." + id + ".InGuiSlot");
 		this.maxLevel = this.plugin.getEnchantsConfig().getYamlConfig().getInt("enchants." + id + ".Max");

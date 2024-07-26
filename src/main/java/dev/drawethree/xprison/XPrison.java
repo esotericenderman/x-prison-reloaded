@@ -1,6 +1,5 @@
 package dev.drawethree.xprison;
 
-import com.github.lalyos.jfiglet.FigletFont;
 import dev.drawethree.xprison.autominer.XPrisonAutoMiner;
 import dev.drawethree.xprison.autosell.XPrisonAutoSell;
 import dev.drawethree.xprison.config.FileManager;
@@ -135,14 +134,10 @@ public final class XPrison extends ExtendedJavaPlugin {
 	}
 
 	private void printOnEnableMessage() {
-		try {
-			this.getLogger().info(FigletFont.convertOneLine("X-PRISON"));
-			this.getLogger().info(this.getDescription().getVersion());
-			this.getLogger().info("By: " + this.getDescription().getAuthors());
-			this.getLogger().info("Website: " + this.getDescription().getWebsite());
-		} catch (IOException ignored) {
-		}
-	}
+        this.getLogger().info(this.getDescription().getVersion());
+        this.getLogger().info("By: " + this.getDescription().getAuthors());
+        this.getLogger().info("Website: " + this.getDescription().getWebsite());
+    }
 
 	private void initNicknameService() {
 		NicknameRepository nicknameRepository = new NicknameRepositoryImpl(this.getPluginDatabase());

@@ -4,11 +4,16 @@ messages:
   enchant_max_level_exceed: "&e&l(!) &eThis transaction would exceed the max level for this enchant."
   enchant_min_level_exceed: "&e&l(!) &eThis transaction would exceed the min level for this enchant."
   not_enough_tokens: "&cYou do not have enough tokens!"
-  enchant_bought: "&e&lENCHANT &8� &c&l-%tokens% TOKENS"
-  enchant_bought_multiple: "&e&lENCHANT &8� &7You have bought &f%amount% &7levels of %enchant%&r &7for &f%tokens% &7tokens."
-  enchant_refunded: "&e&lREFUND &8� &7You have refunded &f%amount% &7levels of %enchant%"
-  enchant_tokens_back: "&e&lREFUND &8� &7You have received &f%tokens% &7tokens back."
+  enchant_bought: "&e&lENCHANT &8» &c&l-%tokens% TOKENS"
+  enchant_bought_multiple: "&e&lENCHANT &8» &7You have bought &f%amount% &7levels of %enchant%&r &7for &f%tokens% &7tokens."
+  enchant_refunded: "&e&lREFUND &8» &7You have refunded &f%amount% &7levels of %enchant%"
+  enchant_tokens_back: "&e&lREFUND &8» &7You have received &f%tokens% &7tokens back."
   enchant_cant_disenchant: "&c&l(!) &cThis enchant can't be disenchanted."
+  not_enough_gems: "&cYou do not have enough gems!"
+  enchant_bought_gems: "&e&lENCHANT &8» &c&l-%tokens% gems"
+  enchant_bought_multiple_gems: "&e&lENCHANT &8» &7You have bought &f%amount% &7levels
+      of %enchant%&r &7for &f%tokens% &7gems."
+  enchant_gems_back: "&e&lREFUND &8» &7You have received &f%tokens% &7gems back."
   enchant_no_level: "&e&l(!) &cYou do not have this enchant!"
   charity_other: "&a&l+ $%amount% &7(From %player%'s Charity)"
   charity_your: "&a&l+ $%amount% &7(From Your Charity)"
@@ -16,30 +21,30 @@ messages:
   blessing_your: "&6&l+ %amount% TOKENS &7(From Your Blessing)"
   layer_disabled: "&e&l(!) &7You've &c&lDISABLED &7layer."
   layer_enabled: "&e&l(!) &7You've &a&lENABLED &7layer."
-  block_booster_on: "&e&lENCHANT &8� &fBlock Booster &7has &Aactivated&7, &FX2 Blocks &7for &a&l5:00"
-  block_booster_off: "&e&lENCHANT &8� &fBlock Booster &7has &cDeactivated&7."
+  block_booster_on: "&e&lENCHANT &8» &fBlock Booster &7has &Aactivated&7, &FX2 Blocks &7for &a&l5:00"
+  block_booster_off: "&e&lENCHANT &8» &fBlock Booster &7has &cDeactivated&7."
   explosive_disabled: "&e&l(!) &7You've &c&lDISABLED &7explosive."
   explosive_enabled: "&e&l(!) &7You've &a&lENABLED &7explosive."
-  value_no_permission: "&e&lVALUE &8� &7No Permission, Unlock at &fstore.xprison.net&7."
-  value_no_pickaxe: "&e&lVALUE &8� &7You must hold an pickaxe in your hand."
-  value_value: "&e&lVALUE &8� &f%player%'s &7Pickaxe Value: &f%tokens% Tokens&7."
-  value_cooldown: "&e&lVALUE &8� &7Please wait &f%time% Seconds&7 before using this command again."
-  pickaxe_given: "&e&lENCHANT &8� &fYou have given pickaxe to &e%player%"
-  pickaxe_received: "&e&lENCHANT &8� &fYou have received pickaxe from &e%sender%"
-  pickaxe_inventory_full: "&e&lENCHANT &8� &e%player% &chas full inventory!"
-  prestige_finder: "&e&lPRESTIGE FINDER &8� &7You've just found a &fX%prestige% Prestige Level &7while mining."
-  transaction_in_progress: "&e&lENCHANT &8� &cPlease wait for your other transaction to complete."
-  pickaxe_level_required: "&e&lENCHANT &8� &cYou need to have at least &ePickaxe Level %pickaxe_level%&c in order to enchant this!"
+  value_no_permission: "&e&lVALUE &8» &7No Permission, Unlock at &fstore.xprison.net&7."
+  value_no_pickaxe: "&e&lVALUE &8» &7You must hold an pickaxe in your hand."
+  value_value: "&e&lVALUE &8» &f%player%'s &7Pickaxe Value: &f%tokens% Tokens&7."
+  value_cooldown: "&e&lVALUE &8» &7Please wait &f%time% Seconds&7 before using this command again."
+  pickaxe_given: "&e&lENCHANT &8» &fYou have given pickaxe to &e%player%"
+  pickaxe_received: "&e&lENCHANT &8» &fYou have received pickaxe from &e%sender%"
+  pickaxe_inventory_full: "&e&lENCHANT &8» &e%player% &chas full inventory!"
+  prestige_finder: "&e&lPRESTIGE FINDER &8» &7You've just found a &fX%prestige% Prestige Level &7while mining."
+  transaction_in_progress: "&e&lENCHANT &8» &cPlease wait for your other transaction to complete."
+  pickaxe_level_required: "&e&lENCHANT &8» &cYou need to have at least &ePickaxe Level %pickaxe_level%&c in order to enchant this!"
 # Should we keep UPC Enchanted pickaxes in players inventory when they die?
 keep-pickaxes-on-death: true
 # Should use unbreakable permission to handle unbreakable pickaxes?
-use-unbreakable-permission: false
+use-unbreakable-permission: true
 # Action to open Enchanting menu while holding pickaxe. For multiple, separate them with ',' (LEFT_CLICK_BLOCK,RIGHT_CLICK_BLOCK,LEFT_CLICK_AIR,RIGHT_CLICK_AIR,PHYSICAL)
 open-enchant-menu-action: "RIGHT_CLICK_AIR,RIGHT_CLICK_BLOCK"
 # Enchant Menu Settings
 enchant_menu:
   # GUI Name
-  title: "&7Enchants Menu"
+  title: "&7強化介面"
   # Filler items
   empty_slots: STAINED_GLASS_PANE:7
   # Number of GUI rows
@@ -53,17 +58,17 @@ enchant_menu:
     lore:
       - "&7%description%"
       - " "
-      - "&6&l* &ePrice: &f%cost%"
-      - "&6&l* &eMax Level: &f%max_level%"
-      - "&6&l* &eCurrent Level: &f%current_level%"
-      - "&6&l* &eChance to trigger: &f%%chance%"
+      - "&6&l* &e價格: &f%cost% %token_type%"
+      - "&6&l* &e最高等級: &f%max_level%"
+      - "&6&l* &e現在等級: &f%current_level%"
+      - "&6&l* &e觸發機率: &f%chance%%"
       - " "
       - "&7&o(( &f&oLeft-Click&7&o to add 1 level ))"
       - "&7&o(( &f&oRight-Click&7&o to add 10 levels ))"
       - "&7&o(( &f&oMiddle-Click&7&o to add 100 levels ))"
       - "&7&o(( &f&oPress 'Q'&7&o to buy as much as you can afford ))"
       - " "
-      - "&c&lYou must have at least Level %pickaxe_level% on your pickaxe"
+      - "&c&l使用等級限制: %pickaxe_level%"
   # Help item settings
   help_item:
     enabled: true
@@ -74,13 +79,13 @@ enchant_menu:
     name: "&6&lHOW IT WORKS?"
     lore:
       - " "
-      - "&6&l* &eLeft-Click &8� &7Buy 1 Level"
+      - "&6&l* &eLeft-Click &8» &7Buy 1 Level"
       - " "
-      - "&6&l* &eRight-Click &8� &7Buy 10 Levels"
+      - "&6&l* &eRight-Click &8» &7Buy 10 Levels"
       - " "
-      - "&6&l* &eMiddle-Click &8� &7Buy 100 Levels"
+      - "&6&l* &eMiddle-Click &8» &7Buy 100 Levels"
       - " "
-      - "&6&l* &ePress Q &8� &7Buy MAX you can afford"
+      - "&6&l* &ePress Q &8» &7Buy MAX you can afford"
       - " "
       - "&7&o(( &f&oClick&7&o on the enchant to buy ))"
   # Disenchant item settings
@@ -123,13 +128,13 @@ disenchant_menu:
     name: "&6&lHOW IT WORKS?"
     lore:
       - " "
-      - "&6&l* &eLeft-Click &8� &7-1 Levels"
+      - "&6&l* &eLeft-Click &8» &7-1 Levels"
       - " "
-      - "&6&l* &eRight-Click &8� &7-10 Levels"
+      - "&6&l* &eRight-Click &8» &7-10 Levels"
       - " "
-      - "&6&l* &eMiddle-Click &8� &7-100 Levels"
+      - "&6&l* &eMiddle-Click &8» &7-100 Levels"
       - " "
-      - "&6&l* &e'Q' &8� &7-ALL Levels"
+      - "&6&l* &e'Q' &8» &7-ALL Levels"
       - "&7&o(( &f&oClick&7&o on the enchant name to disenchant ))"
 # All available UPC  Enchants settings.
 enchants:
@@ -138,9 +143,9 @@ enchants:
     # Raw name of the enchant for some commands.
     RawName: "efficiency"
     # Displayname in chat / lore of the enchant
-    Name: '&aEfficiency'
+    Name: '&a效率'
     # Name in Enchant / Disenchant GUI
-    GuiName: '&aEfficiency'
+    GuiName: '&a效率'
     # Representative icon of enchant in GUI
     Material: BOOK
     #If you would like to use Base64 custom player skulls, just uncomment this line an change the Material above to PLAYER_HEAD
@@ -550,7 +555,7 @@ enchants:
     Remove-Blocks: true
     Count-Blocks-Broken: true
     Use-Events: false
-    Message: "&e&lENCHANT &8� &7You got &2&l$&a%money% &7from &c&lNuke &7activation."
+    Message: "&e&lENCHANT &8» &7You got &2&l$&a%money% &7from &c&lNuke &7activation."
     Refund:
       Enabled: true
       InGuiSlot: 47
@@ -601,9 +606,9 @@ Pickaxe:
   excluded-format: "&7[&c-&7] &8%Enchant% %Level%"
   lore:
     - '&8&m------------------------'
-    - '&e&lBLOCKS MINED: &f%Blocks%/%Blocks_Required%'
-    - '&e&lPICKAXE LEVEL: &f%PickaxeLevel% &7[%PickaxeProgress%&7]'
-    - '&e&lDURABILITY: &f%Durability%'
+    - '&e&l已挖掘: &f%Blocks%/%Blocks_Required%'
+    - '&e&l等級: &f%PickaxeLevel% &7[%PickaxeProgress%&7]'
+    - '&e&l耐久: &f%Durability%'
     - '&8&m------------------------'
     - '%Enchant-1%'
     - '%Enchant-2%'
@@ -633,7 +638,7 @@ first-join-pickaxe:
   # Should we give this pickaxe to players when they first join?
   enabled: true
   # Name of pickaxe
-  name: "&e%player%'s Pickaxe"
+  name: "&e%player%的鑽石稿"
   # Material of pickaxe
   material: DIAMOND_PICKAXE
   # Raw names + levels of specific enchants for first join pickaxe

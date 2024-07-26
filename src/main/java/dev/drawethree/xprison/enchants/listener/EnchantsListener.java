@@ -98,6 +98,10 @@ public class EnchantsListener {
 				.handler(e -> {
 					if (this.plugin.getCore().isPickaxeSupported(e.getItemDrop().getItemStack())) {
 						this.plugin.getEnchantsManager().handlePickaxeUnequip(e.getPlayer(), e.getItemDrop().getItemStack());
+						Player p = e.getPlayer();
+						ItemStack item = e.getItemDrop().getItemStack().clone();
+						e.getItemDrop().remove();
+						p.getInventory().addItem(item);
 					}
 				}).bindWith(this.plugin.getCore());
 	}
