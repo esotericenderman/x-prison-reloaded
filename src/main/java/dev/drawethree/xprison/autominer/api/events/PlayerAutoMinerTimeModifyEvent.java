@@ -2,7 +2,6 @@ package dev.drawethree.xprison.autominer.api.events;
 
 import dev.drawethree.xprison.api.events.player.XPrisonPlayerEvent;
 import lombok.Getter;
-import lombok.Setter;
 import org.bukkit.entity.Player;
 import org.bukkit.event.HandlerList;
 import org.jetbrains.annotations.NotNull;
@@ -14,11 +13,9 @@ public final class PlayerAutoMinerTimeModifyEvent extends XPrisonPlayerEvent {
 	private static final HandlerList handlers = new HandlerList();
 
 	@Getter
-	@Setter
 	private final TimeUnit timeUnit;
 
 	@Getter
-	@Setter
 	private final long duration;
 
 	/**
