@@ -5,11 +5,15 @@ import com.mojang.authlib.properties.Property;
 import dev.drawethree.xprison.utils.compat.CompMaterial;
 import dev.drawethree.xprison.utils.compat.MinecraftVersion;
 import dev.drawethree.xprison.utils.item.ItemStackBuilder;
+import net.minecraft.world.item.component.ResolvableProfile;
+import org.bukkit.Bukkit;
 import org.bukkit.OfflinePlayer;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.SkullMeta;
 
-import java.lang.reflect.Field;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.util.Arrays;
 import java.util.List;
 import java.util.UUID;
 
@@ -46,15 +50,19 @@ public class SkullUtils {
 		}
 
 		profile.getProperties().put("textures", new Property("textures", value));
-		Field profileField;
+
+		ResolvableProfile resolvableProfile = new ResolvableProfile(profile);
+
+		assert meta != null;
+
 		try {
-			profileField = meta.getClass().getDeclaredField("profile");
-			profileField.setAccessible(true);
-			profileField.set(meta, profile);
-		} catch (IllegalArgumentException | IllegalAccessException | NoSuchFieldException | SecurityException e) {
-			e.printStackTrace();
-		}
-		head.setItemMeta(meta);
+			Method setProfileMethod = meta.getClass().getDeclaredMethod("setProfile", ResolvableProfile.class);
+			setProfileMethod.setAccessible(true);
+			setProfileMethod.invoke(meta, resolvableProfile);
+		} catch (InvocationTargetException | NoSuchMethodException | IllegalAccessException e) {
+            e.printStackTrace();
+        }
+        head.setItemMeta(meta);
 		return head;
 	}
 
