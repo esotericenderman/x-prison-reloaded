@@ -1,8 +1,6 @@
 ![X-Prison Header](https://imgur.com/Hrv0YkI.png)
 # X-Prison Reloaded
- <!---
-![Issues](https://img.shields.io/github/issues/Drawethree/X-Prison?label=Issues&logo=GitHub)
--->
+
 ![Discord](https://img.shields.io/discord/716145013276278815?label=Discord&logo=Discord)
 
 **X-Prison** is a the **ultimate solution** for your prison server! This core contains **everything** that should be on each prison server. By including **Prison Mines System**, **20+ Custom Enchants**, **Gangs**, **Auto-Sell**, **Auto-Miner** region, **Pickaxe Levels**, **Tokens & Gems** currencies, **Ranks & Prestiges**, **Multipliers** and a lot of more, its one of the **best prison cores** on the market.
