@@ -1,4 +1,4 @@
-# X-Prison Reloaded
+# X-Prison Reloaded Plugin
 
 > An abandoned attempt at updating and repurposing the X-Prison plugin for a commission.
 
