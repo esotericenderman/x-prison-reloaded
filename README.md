@@ -1,5 +1,8 @@
-![X-Prison Header](https://imgur.com/Hrv0YkI.png)
 # X-Prison Reloaded
+
+> An abandoned attempt at updating and repurposing the X-Prison plugin for a commission.
+
+![X-Prison Header](https://imgur.com/Hrv0YkI.png)
 
 ![Discord](https://img.shields.io/discord/716145013276278815?label=Discord&logo=Discord)
 
