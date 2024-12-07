@@ -1,6 +1,6 @@
 # X-Prison Reloaded Plugin
 
-> An abandoned attempt at updating and repurposing the X-Prison plugin for a commission.
+> An abandoned attempt at updating and repurposing the [X-Prison plugin](https://github.com/Drawethree/X-Prison) for a commission.
 
 ![X-Prison Header](https://imgur.com/Hrv0YkI.png)
 
