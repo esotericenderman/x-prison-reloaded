@@ -51,7 +51,7 @@
 
 ### License
 
-[X-Prison Reloaded](https://github.com/Drawethree/X-Prison) Copyright (c) 2023 Bc. Ján Kluka
+[X-Prison Reloaded](https://github.com/Drawethree/X-Prison) Copyright (c) 2023 [Bc. Ján Kluka](https://github.com/Drawethree)
 
 This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the [MIT license](./LICENSE) for more details.
 
