@@ -19,6 +19,7 @@
 * [Placeholders](https://github.com/Drawethree/X-Prison/wiki/Placeholders)
 * [Refund Policy](https://github.com/Drawethree/X-Prison/blob/main/refund-policy.pdf)
 * [Terms of Service](https://github.com/Drawethree/X-Prison/blob/main/terms-of-service.pdf)
+* [License](#license)
 
 ### Default Files
 * [_config.yml_](https://github.com/Drawethree/X-Prison/wiki/config.yml)
@@ -47,3 +48,11 @@
 ### Screenshots
 
 ![Image1](https://imgur.com/LdQmnhk.png)
+
+### License
+
+[X-Prison Reloaded](https://github.com/Drawethree/X-Prison) Copyright (c) 2023 Bc. Ján Kluka
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the [MIT license](./LICENSE) for more details.
+
+You should have received a copy of the [MIT License](./LICENSE) along with this program. If not, see <[wikipedia/MIT_License](https://en.wikipedia.org/wiki/MIT_License)>.
