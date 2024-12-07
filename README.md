@@ -1,5 +1,7 @@
 # X-Prison Reloaded Plugin
 
+[![Project Status: Abandoned](./assets/images/badges/status.svg)](./)
+
 > An abandoned attempt at updating and repurposing the [X-Prison plugin](https://github.com/Drawethree/X-Prison) for a commission.
 
 ![X-Prison Header](https://imgur.com/Hrv0YkI.png)
