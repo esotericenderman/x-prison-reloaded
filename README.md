@@ -58,3 +58,7 @@
 This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the [MIT license](./LICENSE) for more details.
 
 You should have received a copy of the [MIT License](./LICENSE) along with this program. If not, see <[wikipedia/MIT_License](https://en.wikipedia.org/wiki/MIT_License)>.
+
+### Topics
+
+minecraft spigot spigotmc spigot-plugin minecraft-plugin mc mc-dev spigotplugin prison spigot-plugins mc-development minecraft-spigot plugin-development minecraft-spigot-plugin minecraft-plugin-development spigotmc-plugin mc-plugin spigotmc-plugins mc-plugins minecraft-prison
