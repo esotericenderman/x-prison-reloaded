@@ -2,7 +2,7 @@
 
 <sup>Forked from <a href="https://github.com/0205miss/X-Prison-Reloaded">0205miss/X-Prison-Reloaded</a></sup>
 
-[![Project Status: Abandoned](./assets/images/badges/status.svg)](./)
+[![Project status: abandoned](./assets/images/badges/status.svg)](./)
 
 > An abandoned attempt at updating and repurposing the [X-Prison plugin](https://github.com/Drawethree/X-Prison) for a commission.
 
