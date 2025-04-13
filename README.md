@@ -1,4 +1,4 @@
-# X-Prison Reloaded Plugin
+# X-Prison Reloaded
 
 <sup>Forked from <a href="https://github.com/0205miss/X-Prison-Reloaded">0205miss/X-Prison-Reloaded</a></sup>
 
