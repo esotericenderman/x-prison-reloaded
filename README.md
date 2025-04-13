@@ -22,7 +22,6 @@
 * [Mines Migration](https://github.com/Drawethree/X-Prison/wiki/Migrating-Mines)
 * [Commands & Permissions](https://github.com/Drawethree/X-Prison/wiki/Commands-&-Permissions)
 * [Placeholders](https://github.com/Drawethree/X-Prison/wiki/Placeholders)
-* [Refund Policy](https://github.com/Drawethree/X-Prison/blob/main/refund-policy.pdf)
 * [License](#license)
 
 ### Default Files
