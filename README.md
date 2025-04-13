@@ -15,6 +15,7 @@
 ## Pages
 
 ### General
+
 * [Home](https://github.com/Drawethree/X-Prison/wiki)
 * [Features](https://github.com/Drawethree/X-Prison/wiki/Features)
 * [Setup](https://github.com/Drawethree/X-Prison/wiki/Setup)
@@ -26,6 +27,7 @@
 * [License](#license)
 
 ### Default Files
+
 * [_config.yml_](https://github.com/Drawethree/X-Prison/wiki/config.yml)
 * [_autominer.yml_](https://github.com/Drawethree/X-Prison/wiki/autominer.yml)
 * [_autosell.yml_](https://github.com/Drawethree/X-Prison/wiki/autosell.yml)
